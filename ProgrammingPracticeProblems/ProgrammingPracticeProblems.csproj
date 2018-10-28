@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{85E416B6-5B0B-4E64-B8F2-2008883B836C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ProgrammingPracticeProblems</RootNamespace>
+    <RootNamespace>PracticeProblems</RootNamespace>
     <AssemblyName>ProgrammingPracticeProblems</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ProgrammingPracticeProblems.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvenFibonacciNumbers.cs" />
+    <Compile Include="MultiplesOf3And5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
