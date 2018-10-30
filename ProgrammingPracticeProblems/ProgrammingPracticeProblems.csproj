@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EvenFibonacciNumbers.cs" />
+    <Compile Include="LargestPalindromeProduct.cs" />
     <Compile Include="MultiplesOf3And5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
