@@ -27,9 +27,10 @@ namespace PracticeProblems
         private long Solution1(int max)
         {
             long maxval = long.MaxValue;
-            for (long i = max; i < maxval; i += max)
+            long increment = max * (max - 1);
+            for (long i = increment; i < maxval; i += increment)
             {
-                long val = TestMultiple(i, max);
+                long val = TestMultiple(i, max - 1);
                 if (val > 0) return val;
             }
             return 0;
