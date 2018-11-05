@@ -50,6 +50,7 @@ namespace PracticeProblems
             }
         }
 
+        //This is an O(n) solution where n is the length of the string to search through.
         private long Solution1(string number, int length)
         {
             int maxSum = 0;

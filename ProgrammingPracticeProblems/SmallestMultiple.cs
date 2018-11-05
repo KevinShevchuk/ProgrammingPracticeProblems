@@ -27,7 +27,7 @@ namespace PracticeProblems
             }
         }
 
-        private long Solution1(int max)
+        private long Solution1(int max)//O(n^2)
         {
             long maxval = long.MaxValue;
             long increment = max * (max - 1);

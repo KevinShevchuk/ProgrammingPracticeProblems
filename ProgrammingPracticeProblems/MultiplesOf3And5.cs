@@ -41,7 +41,7 @@ namespace PracticeProblems
             Console.WriteLine("Sum: " + sum);
         }
 
-        public void Solution2(int max)
+        public void Solution2(int max) //O(n)
         {
             int three = 0;
             int five = 0;
