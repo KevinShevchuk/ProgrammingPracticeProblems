@@ -28,7 +28,7 @@ namespace PracticeProblems
             }
         }
 
-        private void Solution1(int max)
+        private void Solution1(int max)//O(n)
         {
             int x = 1;
             int y = 2;

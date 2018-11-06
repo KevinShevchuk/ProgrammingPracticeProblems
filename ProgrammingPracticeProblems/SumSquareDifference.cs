@@ -31,7 +31,7 @@ namespace PracticeProblems
             }
         }
 
-        private int Solution1(int max)
+        private int Solution1(int max)//O(n)
         {
             int sum = 0; 
             int squ = 0;

@@ -24,7 +24,7 @@ namespace PracticeProblems
             }
         }
 
-        public long Solution1(int value)
+        public long Solution1(int value)//O(n^2)
         {
             int n = 0;
             if (value >= 2)
@@ -40,6 +40,7 @@ namespace PracticeProblems
             return n;
         }
 
+        //Aborts early if it finds any divisor greater than 1
         private bool CheckPrime(int value, int divisor)
         {
             if (value < 2)

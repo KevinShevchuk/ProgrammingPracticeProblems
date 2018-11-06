@@ -39,6 +39,7 @@ namespace PracticeProblems
             return 0;
         }
 
+        //Aborts early if it finds any divisor greater than 1
         private bool CheckPrime(int value, int divisor)
         {
             if (value < 2)

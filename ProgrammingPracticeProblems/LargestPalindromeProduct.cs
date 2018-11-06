@@ -29,7 +29,7 @@ namespace PracticeProblems
             }
         }
 
-        public void Solution1()
+        public void Solution1()//0(n^2)
         {
             int palindrome = 999 * 999;
             while (true)
@@ -44,6 +44,7 @@ namespace PracticeProblems
             }
         }
 
+        //Split number in half, reverse the first half and concatenate the result to the first half
         public int NextPalindrome(int value)
         {
             string firsthalf = value.ToString().Substring(0, value.ToString().Length / 2);
