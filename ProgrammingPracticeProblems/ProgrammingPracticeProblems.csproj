@@ -49,6 +49,7 @@
     <Compile Include="LargestProductInGrid.cs" />
     <Compile Include="LargestProductInSeries.cs" />
     <Compile Include="LargeSum.cs" />
+    <Compile Include="LongestCollatzSequence.cs" />
     <Compile Include="NthPrime.cs" />
     <Compile Include="EvenFibonacciNumbers.cs" />
     <Compile Include="LargestPalindromeProduct.cs" />
