@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountingSundays.cs" />
     <Compile Include="LargestProductInGrid.cs" />
     <Compile Include="LargestProductInSeries.cs" />
     <Compile Include="LargeSum.cs" />
