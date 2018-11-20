@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CountingSundays.cs" />
+    <Compile Include="LargestPrimeFactor.cs" />
     <Compile Include="LargestProductInGrid.cs" />
     <Compile Include="LargestProductInSeries.cs" />
     <Compile Include="LargeSum.cs" />
