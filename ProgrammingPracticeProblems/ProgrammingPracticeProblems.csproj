@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,7 @@
   <ItemGroup>
     <Compile Include="CountingSundays.cs" />
     <Compile Include="DivisibleTriangularNumber.cs" />
+    <Compile Include="FactorialDigitSum.cs" />
     <Compile Include="LargestPrimeFactor.cs" />
     <Compile Include="LargestProductInGrid.cs" />
     <Compile Include="LargestProductInSeries.cs" />
