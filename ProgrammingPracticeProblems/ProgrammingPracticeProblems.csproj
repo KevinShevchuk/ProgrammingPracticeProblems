@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CountingSundays.cs" />
+    <Compile Include="DistinctPowers.cs" />
     <Compile Include="DivisibleTriangularNumber.cs" />
     <Compile Include="FactorialDigitSum.cs" />
     <Compile Include="LargestPrimeFactor.cs" />
