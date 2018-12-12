@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ThousandDigitFibonacciNumber.cs" />
     <Compile Include="CountingSundays.cs" />
     <Compile Include="DistinctPowers.cs" />
     <Compile Include="DivisibleTriangularNumber.cs" />
