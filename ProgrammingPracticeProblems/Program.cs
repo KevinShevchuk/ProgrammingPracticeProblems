@@ -17,6 +17,7 @@ namespace ProgrammingPracticeProblems
             GetClassList();
             while (true)
             {
+                Console.WriteLine("==========Main==========");
                 Console.WriteLine("Type \"dir\" to display all the available problems. Type the name to run it.");
                 Console.WriteLine("Type \"exit\" to quit.");
                 string input = Console.ReadLine();
@@ -46,7 +47,7 @@ namespace ProgrammingPracticeProblems
 
         private static void PrintDir()
         {
-            Console.WriteLine("============Directory:============");
+            Console.WriteLine("----------Directory:----------");
             foreach (Type clss in _classList)
             {
                 if (clss.Name != "Program")
@@ -54,7 +55,7 @@ namespace ProgrammingPracticeProblems
                     Console.WriteLine(clss.Name.PadLeft(4));
                 }
             }
-            Console.WriteLine("==========End Directory:==========");
+            Console.WriteLine("----------End Directory:-----------");
         }
 
         private static void FindProblem(string name)
@@ -68,7 +69,7 @@ namespace ProgrammingPracticeProblems
             }
             else
             {
-                Console.WriteLine("============" + clsName.First().Name + "============");
+                Console.WriteLine("==========" + clsName.First().Name + "==========");
                 RunProblem(clsName.First());
             }
         }

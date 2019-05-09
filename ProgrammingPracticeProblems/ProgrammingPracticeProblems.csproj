@@ -47,28 +47,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ThousandDigitFibonacciNumber.cs" />
-    <Compile Include="CountingSundays.cs" />
-    <Compile Include="DistinctPowers.cs" />
-    <Compile Include="DivisibleTriangularNumber.cs" />
-    <Compile Include="FactorialDigitSum.cs" />
-    <Compile Include="LargestPrimeFactor.cs" />
-    <Compile Include="LargestProductInGrid.cs" />
-    <Compile Include="LargestProductInSeries.cs" />
-    <Compile Include="LargeSum.cs" />
-    <Compile Include="LongestCollatzSequence.cs" />
-    <Compile Include="NthPrime.cs" />
-    <Compile Include="EvenFibonacciNumbers.cs" />
-    <Compile Include="LargestPalindromeProduct.cs" />
-    <Compile Include="MultiplesOf3And5.cs" />
-    <Compile Include="NumberLetterCounts.cs" />
-    <Compile Include="NumberSpiralDiagonals.cs" />
+    <Compile Include="CodeChef\AddTwoNumbers.cs" />
+    <Compile Include="CodeChef\ATM.cs" />
+    <Compile Include="CodeChef\EnormousInputTest.cs" />
+    <Compile Include="Project Euler\ThousandDigitFibonacciNumber.cs" />
+    <Compile Include="Project Euler\CountingSundays.cs" />
+    <Compile Include="Project Euler\DistinctPowers.cs" />
+    <Compile Include="Project Euler\DivisibleTriangularNumber.cs" />
+    <Compile Include="Project Euler\FactorialDigitSum.cs" />
+    <Compile Include="Project Euler\LargestPrimeFactor.cs" />
+    <Compile Include="Project Euler\LargestProductInGrid.cs" />
+    <Compile Include="Project Euler\LargestProductInSeries.cs" />
+    <Compile Include="Project Euler\LargeSum.cs" />
+    <Compile Include="Project Euler\LongestCollatzSequence.cs" />
+    <Compile Include="Project Euler\NthPrime.cs" />
+    <Compile Include="Project Euler\EvenFibonacciNumbers.cs" />
+    <Compile Include="Project Euler\LargestPalindromeProduct.cs" />
+    <Compile Include="Project Euler\MultiplesOf3And5.cs" />
+    <Compile Include="Project Euler\NumberLetterCounts.cs" />
+    <Compile Include="Project Euler\NumberSpiralDiagonals.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmallestMultiple.cs" />
-    <Compile Include="SpecialPythagoreanTriplet.cs" />
-    <Compile Include="SumOfPrimes.cs" />
-    <Compile Include="SumSquareDifference.cs" />
+    <Compile Include="Project Euler\SmallestMultiple.cs" />
+    <Compile Include="Project Euler\SpecialPythagoreanTriplet.cs" />
+    <Compile Include="Project Euler\SumOfPrimes.cs" />
+    <Compile Include="Project Euler\SumSquareDifference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
