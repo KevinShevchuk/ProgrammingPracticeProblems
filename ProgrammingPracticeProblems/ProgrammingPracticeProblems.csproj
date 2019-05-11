@@ -47,9 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeChef\AddTwoNumbers.cs" />
-    <Compile Include="CodeChef\ATM.cs" />
-    <Compile Include="CodeChef\EnormousInputTest.cs" />
+    <Compile Include="CodeChefBeginner\AddTwoNumbers.cs" />
+    <Compile Include="CodeChefBeginner\ATM.cs" />
+    <Compile Include="CodeChefBeginner\EnormousInputTest.cs" />
+    <Compile Include="CodeChefBeginner\SmallFactorial.cs" />
+    <Compile Include="CodeChefBeginner\SumOfDigits.cs" />
+    <Compile Include="CodeChefBeginner\TurboSort.cs" />
     <Compile Include="Project Euler\ThousandDigitFibonacciNumber.cs" />
     <Compile Include="Project Euler\CountingSundays.cs" />
     <Compile Include="Project Euler\DistinctPowers.cs" />
