@@ -44,7 +44,7 @@ namespace PracticeProblems
                 int inputs = 0;
                 while (inputs < numberOfTests)
                 {
-                    Console.WriteLine("Enter the number to find the sum of the first and last digits of:");
+                    Console.WriteLine("Enter the number to find the square root of:");
                     bool success1 = double.TryParse(Console.ReadLine(), out double test);
                     if (success1 && test <= Math.Pow(10, 4))
                     {
