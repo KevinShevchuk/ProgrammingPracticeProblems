@@ -63,6 +63,7 @@
     <Compile Include="CodeChefBeginner\SecondLargest.cs" />
     <Compile Include="CodeChefBeginner\SmallFactorial.cs" />
     <Compile Include="CodeChefBeginner\SumOfDigits.cs" />
+    <Compile Include="CodeChefBeginner\SumsInATriangle.cs" />
     <Compile Include="CodeChefBeginner\TurboSort.cs" />
     <Compile Include="Project Euler\ThousandDigitFibonacciNumber.cs" />
     <Compile Include="Project Euler\CountingSundays.cs" />
