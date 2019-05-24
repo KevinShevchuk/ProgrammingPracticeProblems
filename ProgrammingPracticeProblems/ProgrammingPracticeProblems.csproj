@@ -61,6 +61,8 @@
     <Compile Include="CodeChefBeginner\PackagingCupcakes.cs" />
     <Compile Include="CodeChefBeginner\ReverseNumber.cs" />
     <Compile Include="CodeChefBeginner\SecondLargest.cs" />
+    <Compile Include="CodeChefBeginner\Servant.cs" />
+    <Compile Include="CodeChefBeginner\SmallestNumberOfNotes.cs" />
     <Compile Include="CodeChefBeginner\SmallFactorial.cs" />
     <Compile Include="CodeChefBeginner\SumOfDigits.cs" />
     <Compile Include="CodeChefBeginner\SumsInATriangle.cs" />
