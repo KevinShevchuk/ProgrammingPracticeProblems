@@ -51,6 +51,7 @@
     <Compile Include="CodeChefBeginner\ATM.cs" />
     <Compile Include="CodeChefBeginner\ChefAndRemissness.cs" />
     <Compile Include="CodeChefBeginner\CielAndReceipt.cs" />
+    <Compile Include="CodeChefBeginner\CuttingRecipes.cs" />
     <Compile Include="CodeChefBeginner\EnormousInputTest.cs" />
     <Compile Include="CodeChefBeginner\FindingSquareRoots.cs" />
     <Compile Include="CodeChefBeginner\FindRemainder.cs" />
