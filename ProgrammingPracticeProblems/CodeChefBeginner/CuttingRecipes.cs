@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 //The chef has a recipe he wishes to use for his guests, but the recipe will make far more food than he can serve to the guests.The chef therefore would like to make a reduced version of the recipe which has the same ratios of ingredients, but makes less food. The chef, however, does not like fractions. The original recipe contains only whole numbers of ingredients, and the chef wants the reduced recipe to only contain whole numbers of ingredients as well.Help the chef determine how much of each ingredient to use in order to make as little food as possible.
 
@@ -28,12 +26,10 @@ using System.Threading.Tasks;
 //2≤N≤50
 //All ingredient quantities are between 1 and 1000, inclusive.
 
-namespace PracticeProblems.CodeChefBeginner
+namespace PracticeProblems
 {
     class CuttingRecipes
     {
-        private static readonly IEnumerable<int> _primes = new HashSet<int> { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997 };
-
         public CuttingRecipes()
         {
             Console.WriteLine("Input the number of tests:");
@@ -49,10 +45,10 @@ namespace PracticeProblems.CodeChefBeginner
                     string tempInput = Console.ReadLine();
                     string[] tempSplitInput = tempInput.Split(' ');
                     int[] tempIntInput = new int[tempSplitInput.Count() - 1];
-                    bool success1 = int.TryParse(input, out int numInEntry);
-                    if (success1 && numInEntry == tempSplitInput.Count() - 2 && numInEntry >= 2 && numInEntry <= 50)
+                    bool success1 = int.TryParse(tempSplitInput[0], out int numInEntry);
+                    if (success1 && numInEntry == tempSplitInput.Count() - 1 && numInEntry >= 2 && numInEntry <= 50)
                     {
-                        for (int i = 1; i < tempSplitInput.Count() - 1; i++)
+                        for (int i = 1; i < tempSplitInput.Count(); i++)
                         {
                             bool success2 = int.TryParse(tempSplitInput[i], out int quant);
                             if (success2 && quant >= 1 && quant <= 1000)
@@ -78,7 +74,12 @@ namespace PracticeProblems.CodeChefBeginner
 
                 foreach (int[] l in results)
                 {
-                    Console.WriteLine(l);
+                    string prnt = string.Empty;
+                    foreach (int m in l)
+                    {
+                        prnt += m + " ";
+                    }
+                    Console.WriteLine(prnt);
                 }
             }
             else
@@ -89,15 +90,8 @@ namespace PracticeProblems.CodeChefBeginner
 
         private int[] Solution1(int[] input)
         {
-            int[] results = new int[input.Count() - 1];
-            float[] temp = new float[input.Count() - 1];
-
-            //If any of the input numbers is prime return the list.
-            foreach (int i in input)
-            {
-                if (_primes.Contains(i))
-                    return input;
-            }
+            int[] results = new int[input.Count()];
+            float[] temp = new float[input.Count()];
 
             //Find the smallest number in the input
             int smallest = int.MaxValue;
@@ -110,7 +104,7 @@ namespace PracticeProblems.CodeChefBeginner
             //Find the divisors of the smallest value.
             List<int> divisors = new List<int>();
             int divisor = 2;
-            while (divisor <= smallest / 2)
+            while (divisor <= smallest)
             {
                 if (smallest % divisor == 0)
                 {
@@ -135,9 +129,13 @@ namespace PracticeProblems.CodeChefBeginner
                 {
                     for (int i = 0; i < input.Count(); i++)
                     {
-                        results[i] = input[i] % k;
+                        results[i] = input[i] / k;
                     }
                 }
+            }
+            if (results[0] == 0)
+            {
+                results = input;
             }
             return results;
         }

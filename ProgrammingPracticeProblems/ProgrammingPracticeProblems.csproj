@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="CodeChefBeginner\AddTwoNumbers.cs" />
     <Compile Include="CodeChefBeginner\ATM.cs" />
+    <Compile Include="CodeChefBeginner\ChefAndOperators.cs" />
     <Compile Include="CodeChefBeginner\ChefAndRemissness.cs" />
     <Compile Include="CodeChefBeginner\CielAndReceipt.cs" />
     <Compile Include="CodeChefBeginner\CuttingRecipes.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="CodeChefBeginner\SumOfDigits.cs" />
     <Compile Include="CodeChefBeginner\SumsInATriangle.cs" />
     <Compile Include="CodeChefBeginner\TurboSort.cs" />
+    <Compile Include="CodeChefBeginner\ValidTriangles.cs" />
     <Compile Include="Project Euler\ThousandDigitFibonacciNumber.cs" />
     <Compile Include="Project Euler\CountingSundays.cs" />
     <Compile Include="Project Euler\DistinctPowers.cs" />
