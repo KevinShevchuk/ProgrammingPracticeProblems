@@ -59,6 +59,7 @@
     <Compile Include="CodeChefBeginner\FirstAndLastDigit.cs" />
     <Compile Include="CodeChefBeginner\LeadGame.cs" />
     <Compile Include="CodeChefBeginner\LuckyFour.cs" />
+    <Compile Include="CodeChefBeginner\Mahasena.cs" />
     <Compile Include="CodeChefBeginner\NumberMirror.cs" />
     <Compile Include="CodeChefBeginner\PackagingCupcakes.cs" />
     <Compile Include="CodeChefBeginner\ReverseNumber.cs" />
