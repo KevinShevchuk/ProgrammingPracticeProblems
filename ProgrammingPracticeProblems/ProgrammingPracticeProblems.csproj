@@ -57,6 +57,7 @@
     <Compile Include="CodeChefBeginner\FindingSquareRoots.cs" />
     <Compile Include="CodeChefBeginner\FindRemainder.cs" />
     <Compile Include="CodeChefBeginner\FirstAndLastDigit.cs" />
+    <Compile Include="CodeChefBeginner\FitSquaresInTriangle.cs" />
     <Compile Include="CodeChefBeginner\IdAndShip.cs" />
     <Compile Include="CodeChefBeginner\LeadGame.cs" />
     <Compile Include="CodeChefBeginner\LuckyFour.cs" />
