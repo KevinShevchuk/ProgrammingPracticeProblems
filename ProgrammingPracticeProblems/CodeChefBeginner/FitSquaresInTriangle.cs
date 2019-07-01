@@ -45,44 +45,47 @@
 
 namespace PracticeProblems
 {
-    public FitSquaresInTriangle()
+    class FitSquaresInTriangle
     {
-        Console.WriteLine("Input the number of tests:");
-        string input = Console.ReadLine();
-        bool success = int.TryParse(input, out int numberOfTests);
-        if (success && numberOfTests >= 1 && numberOfTests <= 100)
+        public FitSquaresInTriangle()
         {
-            string[] results = new string[numberOfTests];
-            int inputs = 0;
-            while (inputs < numberOfTests)
+            Console.WriteLine("Input the number of tests:");
+            string input = Console.ReadLine();
+            bool success = int.TryParse(input, out int numberOfTests);
+            if (success && numberOfTests >= 1 && numberOfTests <= 100)
             {
-                Console.WriteLine("Enter the length of the base of the triangle:");
-                bool success1 = int.TryParse(Console.ReadLine(), out int test);
-                if (success1 && test >= 1 && test <= 1000)
+                int[] results = new int[numberOfTests];
+                int inputs = 0;
+                while (inputs < numberOfTests)
                 {
-                    results[inputs] = Solution1(test);
-                    inputs++;
+                    Console.WriteLine("Enter the length of the base of the triangle:");
+                    bool success1 = int.TryParse(Console.ReadLine(), out int test);
+                    if (success1 && test >= 1 && test <= 1000)
+                    {
+                        results[inputs] = Solution1(test);
+                        inputs++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Input too large.");
+                    }
                 }
-                else
+                foreach (int i in results)
                 {
-                    Console.WriteLine("Input too large.");
+                    Console.WriteLine(i);
                 }
             }
-            foreach (string i in results)
+            else
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Invalid Input.");
             }
         }
-        else
-        {
-            Console.WriteLine("Invalid Input.");
-        }
-    }
 
-    private int Solution1(int input)
-    {
-        input = input - 2;
-        input = input / 2;
-        return input * (input + 1) / 2;
+        private int Solution1(int input)
+        {
+            input = input - 2;
+            input = input / 2;
+            return input * (input + 1) / 2;
+        }
     }
 }
