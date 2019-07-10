@@ -72,6 +72,7 @@
     <Compile Include="CodeChefBeginner\SumOfDigits.cs" />
     <Compile Include="CodeChefBeginner\SumsInATriangle.cs" />
     <Compile Include="CodeChefBeginner\TheSmallestPair.cs" />
+    <Compile Include="CodeChefBeginner\TotalExpenses.cs" />
     <Compile Include="CodeChefBeginner\TurboSort.cs" />
     <Compile Include="CodeChefBeginner\ValidTriangles.cs" />
     <Compile Include="Project Euler\ThousandDigitFibonacciNumber.cs" />
